@@ -80,19 +80,22 @@ sql sys/Oracle18@localhost:32118/XE as sysdba
 -- Connect to default PDB
 sql sys/Oracle18@localhost:32118/XEPDB1 as sysdba
 ```
+
 -- DBeaver
+
+```bash
 host: localhost
 port: 32118
 database: XE
 user: sys
 role: SYSDBA
 pass: Oracle18
+```
 
 ### SSH into Container
 
 Login to server:
 
-```bash
 docker exec -it oracle-xe bash -c "source /home/oracle/.bashrc; bash"
 
 # Once connected to run sqlplus:
