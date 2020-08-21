@@ -74,16 +74,23 @@ _Note `sqlcl` is an alias for [SQLcl](https://www.oracle.com/database/technologi
 
 ```bash
 -- Connect to CDB
-sqlcl sys/Oracle18@localhost:32118/XE as sysdba
+sql sys/Oracle18@localhost:32118/XE as sysdba
 
 
 -- Connect to default PDB
-sqlcl sys/Oracle18@localhost:32118/XEPDB1 as sysdba
+sql sys/Oracle18@localhost:32118/XEPDB1 as sysdba
 ```
+-- DBeaver
+host: localhost
+port: 32118
+database: XE
+user: sys
+role: SYSDBA
+pass: Oracle18
 
 ### SSH into Container
 
-In some cases you may need to login to the server to modify or test something on the file system.
+Login to server:
 
 ```bash
 docker exec -it oracle-xe bash -c "source /home/oracle/.bashrc; bash"
@@ -91,7 +98,6 @@ docker exec -it oracle-xe bash -c "source /home/oracle/.bashrc; bash"
 # Once connected to run sqlplus:
 $ORACLE_HOME/bin/sqlplus sys/Oracle18@localhost/XE as sysdba
 $ORACLE_HOME/bin/sqlplus sys/Oracle18@localhost/XEPDB1 as sysdba
-
 
 # Listener start/stop
 $ORACLE_HOME/bin/lsnrctl stop
