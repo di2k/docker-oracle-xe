@@ -81,9 +81,9 @@ sql sys/Oracle18@localhost:32118/XE as sysdba
 sql sys/Oracle18@localhost:32118/XEPDB1 as sysdba
 ```
 
--- DBeaver
 
 ```bash
+-- DBeaver
 host: localhost
 port: 32118
 database: XE
