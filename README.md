@@ -6,7 +6,7 @@
 - [Container Commands](#container-commands)
 - [Other](#other)
   - [SQL](#sql)
-  - [Docker Developers](#docker-developers)
+  - [SSH into Container](#ssh-into-container)
 
 ## Pre
 
@@ -97,7 +97,3 @@ $ORACLE_HOME/bin/sqlplus sys/Oracle18@localhost/XEPDB1 as sysdba
 $ORACLE_HOME/bin/lsnrctl stop
 $ORACLE_HOME/bin/lsnrctl start
 ```
-
-## Docker Developers
-
-If you're interested in helping maintain this project check out [docker-dev](docs/docker-dev.md) document.
