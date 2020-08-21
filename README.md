@@ -1,6 +1,6 @@
 # Docker: Oracle Database 18c XE
 
-- [Prerequisites](#Pre)
+- [Pre](#Pre)
 - [Build Image](#build-image)
 - [Run Container](#run-container)
 - [Container Commands](#container-commands)
@@ -56,7 +56,7 @@ Name | Required | Description
 
 ```bash
 # Status:
-# Check STATUS column for "(health: ...".
+# Check STATUS column for "(health: ...)".
 docker ps
 
 # Start container
