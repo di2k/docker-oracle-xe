@@ -76,7 +76,6 @@ _Note `sqlcl` is an alias for [SQLcl](https://www.oracle.com/database/technologi
 -- Connect to CDB
 sql sys/Oracle18@localhost:32118/XE as sysdba
 
-
 -- Connect to default PDB
 sql sys/Oracle18@localhost:32118/XEPDB1 as sysdba
 ```
@@ -95,14 +94,18 @@ pass: Oracle18
 ### SSH into Container
 
 Login to server:
-
+```bash
 docker exec -it oracle-xe bash -c "source /home/oracle/.bashrc; bash"
+```
 
 # Once connected to run sqlplus:
+```bash
 $ORACLE_HOME/bin/sqlplus sys/Oracle18@localhost/XE as sysdba
 $ORACLE_HOME/bin/sqlplus sys/Oracle18@localhost/XEPDB1 as sysdba
+```
 
 # Listener start/stop
+```bash
 $ORACLE_HOME/bin/lsnrctl stop
 $ORACLE_HOME/bin/lsnrctl start
 ```
