@@ -98,14 +98,14 @@ Login to server:
 docker exec -it oracle-xe bash -c "source /home/oracle/.bashrc; bash"
 ```
 
-# Once connected to run sqlplus:
 ```bash
+# Once connected to run sqlplus:
 $ORACLE_HOME/bin/sqlplus sys/Oracle18@localhost/XE as sysdba
 $ORACLE_HOME/bin/sqlplus sys/Oracle18@localhost/XEPDB1 as sysdba
 ```
 
-# Listener start/stop
 ```bash
+# Listener start/stop
 $ORACLE_HOME/bin/lsnrctl stop
 $ORACLE_HOME/bin/lsnrctl start
 ```
